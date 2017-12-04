@@ -18,6 +18,8 @@ spec:
       #  imageinfo : {{.Values.test.key}}
         appversion: "{{.Values.appversion}}"
     spec:
+        imagePullSecrets:
+        - name: {{ .Values.pull.secret }}
         containers:
         - image: {{ .Values.image.name }}
           name: app
