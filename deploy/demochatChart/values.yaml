@@ -10,7 +10,7 @@ pullsecret:
   name: codefresh-generated-r.cfcr.io-cfcr-helm-demochat
 image:
   repository: jennyps/demochat
-  name: r.cfcr.io/jennyps/demochat:kubecon
+  name: r.cfcr.io/jennyps/demochat
   tag: v8
   pullPolicy: Always
 test:
