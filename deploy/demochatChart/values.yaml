@@ -7,7 +7,7 @@ build : "1"
 test:
   key: "value2"
 pullsecret:
-  name: codefresh-generated-r.cfcr.io/aschiebold/aschiebold/demochat1:master
+  name: codefresh-generated-r.cfcr.io/aschiebold/aschiebold/demochat1:kubecon
 image:
   repository: aschiebold/demochat-1
   name: r.cfcr.io/aschiebold/aschiebold/demochat1:kubecon
