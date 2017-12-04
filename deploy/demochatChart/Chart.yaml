@@ -1,4 +1,4 @@
 apiVersion: v1
-description: demochatk8
-name: demochatk8
+description: demochat
+name: demochat
 version: 0.0.1
