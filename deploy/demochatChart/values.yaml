@@ -7,11 +7,11 @@ build : "1"
 test:
   key: "value2"
 image:
-  repository: verchol/demo-service1
+  repository: jennyps/demochat
   tag: v8
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 test:
-  image: verchol/demo-service1:v2
+  image: jennyps/demochat:kubecon
 service:
   name: demochat
   type: LoadBalancer
@@ -20,7 +20,7 @@ service:
 commit:
   sha: "1234"
   branch: "master"
-  repo : "verchol/demochat"
+  repo : "jennyps/demochat"
 ingress:
   enabled: false
   # Used to create an Ingress record.
