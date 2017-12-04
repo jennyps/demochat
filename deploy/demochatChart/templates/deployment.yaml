@@ -19,7 +19,7 @@ spec:
         appversion: "{{.Values.appversion}}"
     spec:
         imagePullSecrets:
-        - name: {{ .Values.pull.secret }}
+        - name: {{ .Values.pullsecret.name }}
         containers:
         - image: {{ .Values.image.name }}
           name: app
