@@ -8,6 +8,7 @@ test:
   key: "value2"
 image:
   repository: jennyps/demochat
+  name: containers101/demochat
   tag: v8
   pullPolicy: Always
 test:
