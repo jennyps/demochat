@@ -6,9 +6,11 @@ appversion: 9
 build : "1"
 test:
   key: "value2"
+pullsecret:
+  name: codefresh-generated-r.cfcr.io-cfcr-test1
 image:
   repository: jennyps/demochat
-  name: containers101/demochat
+  name: r.cfcr.io/jennyps/jennyps/demochat:master
   tag: v8
   pullPolicy: Always
 test:
