@@ -7,7 +7,7 @@ build : "1"
 test:
   key: "value2"
 pullsecret:
-  name: codefresh-generated-r.cfcr.io-cfcr-helm-demochat
+  name: codefresh-generated-r.cfcr.io-cfcr-default
 image:
   repository: aschiebold/demochat-1
   name: r.cfcr.io/aschiebold/aschiebold/demochat1:kubecon
