@@ -14,7 +14,7 @@ image:
   tag: v8
   pullPolicy: Always
 test:
-  image: jennyps/demochat:kubecon
+  image: jennyps/demochat:master
 service:
   name: demochat
   type: LoadBalancer
