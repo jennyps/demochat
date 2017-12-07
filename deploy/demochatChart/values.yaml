@@ -9,12 +9,22 @@ test:
 pullsecret:
   name: codefresh-generated-r.cfcr.io-cfcr-default
 image:
+<<<<<<< HEAD
   repository: jennyps/demochat
   name: r.cfcr.io/jennyps/demochat:kubecon
   tag: v8
   pullPolicy: Always
 test:
   image: r.cfcr.io/jennyps/demochat:kubecon
+=======
+  repository: containers101/demochat
+  tag: master
+  pullPolicy: IfNotPresent
+test:
+  image: mwendler/wget
+  timeout :  5 # number of seconds for reconnect
+  tries : 40 #number of retries
+>>>>>>> e8966f9dd6af2dc7c13525e69bebc37b4a3ebc0b
 service:
   name: demochat
   type: LoadBalancer

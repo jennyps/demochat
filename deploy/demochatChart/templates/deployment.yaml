@@ -21,7 +21,11 @@ spec:
         imagePullSecrets:
         - name: {{ .Values.pullsecret.name }}
         containers:
+<<<<<<< HEAD
         - image: {{ .Values.image.name }}
+=======
+        - image: {{.Values.image.repository}}:{{.Values.image.tag}}
+>>>>>>> e8966f9dd6af2dc7c13525e69bebc37b4a3ebc0b
           name: app
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
