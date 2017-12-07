@@ -10,11 +10,11 @@ pullsecret:
   name: codefresh-generated-r.cfcr.io-cfcr-default
 image:
   repository: jennyps/demochat
-  name: r.cfcr.io/jennyps/demochat:kubecon
+  name: jennyps/demochat:kubecon
   tag: v8
   pullPolicy: Always
 test:
-  image: r.cfcr.io/jennyps/demochat:kubecon
+  image: jennyps/demochat:kubecon
 service:
   name: demochat
   type: LoadBalancer
