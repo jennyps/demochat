@@ -5,6 +5,8 @@ metadata:
   annotations:
     "helm.sh/hook": test-success
 spec:
+  imagePullSecrets:
+  - name: {{ .Values.pullsecret.name }}
   containers:
   - name: {{ .Release.Name }}-e2e-test
     image: {{ .Values.test.image}}

@@ -11,10 +11,11 @@ pullsecret:
 image:
 <<<<<<< HEAD
   repository: jennyps/demochat
-  name: r.cfcr.io/jennyps/demochat:kubecon
+  name: jennyps/demochat:kubecon
   tag: v8
   pullPolicy: Always
 test:
+<<<<<<< HEAD
   image: r.cfcr.io/jennyps/demochat:kubecon
 =======
   repository: containers101/demochat
@@ -25,6 +26,9 @@ test:
   timeout :  5 # number of seconds for reconnect
   tries : 40 #number of retries
 >>>>>>> e8966f9dd6af2dc7c13525e69bebc37b4a3ebc0b
+=======
+  image: jennyps/demochat:kubecon
+>>>>>>> f6a27fc8ee7ab25bd85f3f1f99c83d0c6ed44164
 service:
   name: demochat
   type: LoadBalancer
